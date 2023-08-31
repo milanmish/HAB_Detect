@@ -19,3 +19,5 @@ for image_class in os.listdir(data_dir):
                 f.write(image_path + '\n')
         else:
             print('Predicted class likely does not have an algae bloom {}'.format(image_path))
+            with open('npab.txt', 'a') as f:
+                f.write(image_path + '\n')
