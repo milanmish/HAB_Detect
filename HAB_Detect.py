@@ -13,7 +13,7 @@ for image_class in os.listdir(data_dir):
         img = cv2.imread(image_path)
         resize = tf.image.resize(img, (256,256))
         predictVal = HAB_Detect.predict(np.expand_dims(resize/255, 0))
-        if predictVal > 0.5: 
+        if predictVal > 0.45: 
             print('Predicted class likely has an algae bloom {}'.format(image_path))
             with open('pab.txt', 'a') as f:
                 f.write(image_path + '\n')
