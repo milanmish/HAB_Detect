@@ -8,11 +8,13 @@ from keras.models import load_model
 source_folder = r"D:\DCIM\100MEDIA\\"
 destination_folder = r"C:\Users\25milanbm\Desktop\HAB_Detect\drone_data\\"
 
-for file_name in os.listdir(source_folder):
-    source = source_folder + file_name
-    if os.path.isfile(source):
-        destination = destination_folder + file_name
-        shutil.copy(source, destination)
+if os.path.isfile(source_folder):
+
+    for file_name in os.listdir(source_folder):
+        source = source_folder + file_name
+        if os.path.isfile(source):
+            destination = destination_folder + file_name
+            shutil.copy(source, destination)
 
 HAB_Detect = load_model('models/hab_detect.keras')
 data_dir = "drone_data"
