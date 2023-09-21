@@ -1,4 +1,3 @@
-#ADIOS ADIOS ADIOS ADIOS ADIOS ADIOS
 import os
 import shutil
 import tensorflow as tf
