@@ -19,7 +19,6 @@ if os.path.isfile(source_folder):
 HAB_Detect = load_model('models/hab_detect.keras')
 data_dir = "drone_data"
 
-
 for image in os.listdir(data_dir):
     image_path = os.path.join(data_dir, image)
     img = cv2.imread(image_path)
