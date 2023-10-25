@@ -1,3 +1,1 @@
-drone_data\b6564e54-3343-4a90-bf32-b2729b85094d.thumbnail.jpg[[0.9991128]]
-drone_data\hui.jpg[[0.9999917]]
-drone_data\images.jpg[[0.9998131]]
+drone_data\DJI_0069.JPG[[0.9998753]]

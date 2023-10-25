@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 from keras.models import load_model
 
-source_folder = r"D:\DCIM\droneimages"
+source_folder = r"D:\DCIM\100MEDIA"
 destination_folder = r"C:\Users\25milanbm\Desktop\HAB_Detect\drone_data\\"
 
 if os.path.exists(source_folder):
