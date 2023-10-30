@@ -16,8 +16,6 @@ if os.path.exists(source_folder):
         if os.path.isfile(source):
             destination = destination_folder + "\\" + file_name
             shutil.copy(source, destination)
-else:
-    print('hahah I am not cool with that drool')
 
 HAB_Detect = load_model('models/hab_detect.keras')
 data_dir = "drone_data"
